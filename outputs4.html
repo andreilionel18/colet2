@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP 9 - 4th Quarter: JavaScript</title>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: 'Gaegu', cursive;
+  background-image: url("yellow.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  text-align: center;
+  color: #001f4d;
+}
+
+h1 {
+  background-color: #fcf1ae;
+  padding: 20px 40px;
+  color: #001f4d;
+  font-size: 50px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+h2 {
+  background-color: #ff99b8;
+  color: #001f4d;
+  font-size: 35px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.section {
+  background-color: #fcf1ae;
+  border: 4px solid #ff99b8;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+ul {
+  text-align: left;
+  margin-left: 40px;
+}
+
+a.back {
+  display: inline-block;
+  background-color: #ff99b8;
+  color: #001f4d;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+a.back:hover {
+  color: #fcf1ae;
+  text-decoration: underline;
+}
+
+hr.rounded {
+  border-top: 8px solid #001f4d;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.lesson-output {
+  background-color: #fcf1ae;
+  border: 4px solid #ff99b8;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.lesson-output h3 {
+  font-size: 28px;
+  color: #001f4d;
+  background-color: #ff99b8;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.img-box {
+  background-color: #fff9e6;
+  border: 3px dashed #ff99b8;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px auto;
+  width: 90%;
+}
+
+.output-img {
+  width: 100%;
+  max-width: 750px;
+  border: 5px solid #ff99b8;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+</style>
+</head>
+<body>
+
+<h1>4th Quarter: JavaScript</h1> <br>
+
+<!-- Lesson 1 -->
+<h2>Lesson 1: Introduction to JavaScript</h2>
+<div class="section">
+  <p><strong>What is a Script?</strong> A script is a set of computer instructions or commands that connects components to accomplish a task.</p>
+
+  <p><strong>JavaScript:</strong></p>
+  <ul>
+    <li>A powerful client-side scripting language interpreted by web browsers.</li>
+    <li>Created by <strong>Brendan Eich</strong>.</li>
+    <li>Enables developers to build interactive and functional websites.</li>
+    <li>Originally called Mocha → LiveScript → JavaScript.</li>
+    <li>Not related to Java and is case-sensitive.</li>
+    <li>Normally embedded in HTML files (*.htm or *.html).</li>
+  </ul>
+
+  <p><strong>Characteristics of JavaScript:</strong></p>
+  <ul>
+    <li><strong>Interpreted Language:</strong> Runs directly in the browser without compilation.</li>
+    <li><strong>Scripted Language:</strong> Designed for simple or repetitive tasks.</li>
+    <li><strong>Client-Side Scripting:</strong> Executes on the user's machine (not the server).</li>
+    <li><strong>Object-Oriented Programming (OOP):</strong> Treats elements as objects.</li>
+  </ul>
+
+  <p><strong>Important Terms:</strong></p>
+  <ul>
+    <li><strong>Objects:</strong> Items that exist in the browser.</li>
+    <li><strong>Methods:</strong> Actions performed on objects.</li>
+    <li><strong>Properties:</strong> Attributes or subsections of objects.</li>
+    <li><strong>Events:</strong> Actions like page load, clicks, or mouseovers.</li>
+    <li><strong>Parameters:</strong> Data describing an object’s characteristics.</li>
+    <li><strong>Type:</strong> Variable type, e.g., integer, string, float, Boolean.</li>
+    <li><strong>Type Conversion:</strong> Changing a variable from one type to another.</li>
+  </ul>
+
+  <p><strong>Summary:</strong> JavaScript is a client-side scripting language used to create interactive, functional websites. It runs in browsers, supports object-oriented programming, and works with events, methods, and properties to control web page behavior.</p>
+</div>
+
+<hr class="rounded">
+
+<!-- Lesson 2 -->
+<h2>Lesson 2: Placing Scripts & JavaScript Guidelines</h2>
+<div class="section">
+  <p><strong>Where can you place Scripts?</strong> You can control when your JavaScript code runs by placing it in different parts of the HTML file.</p>
+
+  <ul>
+    <li><strong>HEAD:</strong> Scripts here are <em>pre-loaded</em>, executed before any events are triggered. Ideal for function calls.</li>
+    <li><strong>BODY:</strong> Scripts here run when the page loads.</li>
+    <li><strong>HEAD & BODY:</strong> You can place multiple scripts in both sections as needed.</li>
+    <li><strong>EXTERNAL:</strong> Scripts saved in <code>.js</code> files can be linked using <code>&lt;script src="myJavaScript.js"&gt;&lt;/script&gt;</code>. This is helpful for using the same code across multiple HTML files.</li>
+  </ul>
+
+  <p><strong>Comments in JavaScript:</strong></p>
+  <ul>
+    <li>Single-line comment: <code>// This is a comment</code></li>
+    <li>Multi-line comment: <code>/* This is a comment */</code></li>
+  </ul>
+
+  <p><strong>JavaScript Guidelines:</strong></p>
+  <ol>
+    <li><strong>Case Sensitive:</strong> Variable and function names must match exactly. <code>myHome ≠ MyHome</code></li>
+    <li><strong>White Space:</strong> Spaces are ignored, but using them improves readability. Example: <code>var name = "Grace";</code></li>
+    <li><strong>Breaking up code lines:</strong> You can break lines with a backslash (\), but do not split commands improperly. Example: <code>document.write("wow\\Philippines");</code></li>
+  </ol>
+
+  <p><strong>Summary:</strong> Scripts can be placed in the HEAD, BODY, or externally. Always follow JavaScript rules for case sensitivity, proper spacing, and line breaks to avoid errors.</p>
+</div>
+
+<hr class="rounded">
+
+<!-- Lesson 3 -->
+<h2>Lesson 3: JavaScript Events & Actions</h2>
+<div class="section">
+  <p><strong>What are JavaScript Events?</strong> Events are actions or occurrences that happen in the browser, such as:</p>
+  <ul>
+    <li>Loading a page (<code>onload</code>)</li>
+    <li>Clicking a button (<code>onclick</code>)</li>
+    <li>Hovering over an element (<code>onmouseover</code>)</li>
+    <li>Typing in a form (<code>oninput</code>)</li>
+  </ul>
+
+  <p><strong>How to Handle Events:</strong></p>
+  <ul>
+    <li>Assign a function to an HTML element’s event attribute: <code>&lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;</code></li>
+    <li>Write the function in a &lt;script&gt; tag: <code>function greet() { alert("Hello!"); }</code></li>
+    <li>Functions can be placed in HEAD, BODY, or in external JS files.</li>
+  </ul>
+
+  <p><strong>Common JavaScript Actions:</strong></p>
+  <ul>
+    <li><strong>alert():</strong> Shows a popup message.</li>
+    <li><strong>document.write():</strong> Writes text to the HTML document.</li>
+    <li><strong>console.log():</strong> Displays messages in the browser console (useful for debugging).</li>
+    <li><strong>Changing content or styles:</strong> JavaScript can modify text, colors, images, or any HTML element dynamically.</li>
+  </ul>
+
+  <p><strong>Summary:</strong> Events allow JavaScript to respond to user actions or browser activity. By combining functions with events, we can create interactive and dynamic web pages.</p>
+</div>
+
+<!-- outputs -->
+<div class="lesson-output">
+<h2>Sample Codes</h2> <br>
+
+  <h3> My Code</h3>
+  <div class="img-box">
+    <img src="op4t.jpg" alt="Code" class="output-img">
+  </div>
+
+
+  <h3> Output Result</h3>
+  <div class="img-box">
+    <img src="op4.jpg" alt="Output" class="output-img">
+  </div>
+</div>
+
+<hr class="rounded">
+
+<hr class="rounded">
+
+<!-- What I've Learned -->
+<h2>What I’ve Learned</h2>
+<div class="section">
+  <p><strong>Lesson 1:</strong> I learned that JavaScript is a client-side scripting language that allows me to make websites interactive. I learned the key terms like objects, methods, properties, events, and variables, and how JavaScript works together with HTML to create dynamic pages.</p>
+<p><strong>Lesson 2:</strong> I learned that I can place scripts in different parts of an HTML file to control when they run. I also learned the importance of JavaScript guidelines such as case sensitivity, white space, and properly breaking code lines for error-free execution.</p>
+<p><strong>Lesson 3:</strong> I learned that JavaScript can respond to user actions through events like clicks, typing, and hovering. Using functions and event handlers, I can create interactive web pages that dynamically change content or display messages.</p>
+</div>
+</div>
+
+<hr class="rounded">
+
+<a href="ICT.html" class="back">Back to TLE/ICT Homepage</a>
+
+</body>
+</html>

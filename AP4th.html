@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP - Sektor ng Agrikultura</title>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+  font-family: 'Gaegu', cursive;
+  background-image: url("yellow.jpg"); 
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Heading */
+h1 {
+  background-color: #001f4d;
+  padding: 20px;
+  color: #fcf1ae;
+  font-size: 50px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+/* Lesson Category */
+h1.category {
+  background-color: #ff99b8;
+  color: #001f4d;
+  font-size: 40px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  margin: 30px auto 10px auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+
+/* Notes */
+details.notes {
+  background-color: #fcf1ae;
+  color: #001f4d;
+  border: 3px solid #ff99b8;
+  border-radius: 15px;
+  padding: 15px;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  max-width: 750px;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+details.notes[open] {
+  background-color: #ffe9b3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+details.notes summary + * {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+}
+
+details.notes[open] summary + * {
+  max-height: 3000px;
+  opacity: 1;
+}
+
+details.notes summary {
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  font-size: 22px;
+  color: #001f4d;
+  outline: none;
+}
+
+details.notes summary::-webkit-details-marker {
+  display: none;
+}
+
+details.notes summary:hover {
+  color: #ff4d7a;
+  transition: color 0.2s ease;
+}
+
+/* Back Button */
+a.back {
+  font-size: 35px;
+  background-color: #ff99b8;
+  color: #001f4d;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+a.back:hover {
+  text-decoration: underline;
+  color: #fcf1ae;
+}
+
+/* Rounded HR */
+hr.rounded {
+  border-top: 8px solid #001f4d;
+  border-radius: 5px;
+  width: 90%;
+  margin: 40px auto;
+}
+</style>
+</head>
+
+<body>
+<hr class="rounded">
+<h1 class="category">Lesson 1 - Pambansang Kaunlaran</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="pk.jpg">
+ 
+
+<details class="notes"><summary>Ano ang Pambansang Kaunlaran</summary>
+<ul>
+<li>Isang estado ng bansa kung saan tinatamasa ng mga tao mula sa pinakamababang uri ng mamamayan ang nakakamanghang pagbabago sa ekonomiya at pamumuhay</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Konsepto ng Pambansang Kaunlaran</summary>
+<ul>
+<li><strong>Pagbabago:</strong> Paraan upang maging iba o naiiba; proseso ng pag-iiba o pagkakaroon ng kaibahan sa lipunan at ekonomiya</li>
+<li><strong>Pag-unlad:</strong> Pagbabago mula sa mababa tungo sa mataas na antas ng pamumuhay; pagsulong at paglago sa pangkalahatang aspeto ng pamumuhay; isang progresibo at aktibong proseso (FAJARDO); ang kaunlaran ay matatamo lamang kung mapauunlad ang yaman ng buhay ng mga tao kaysa sa yaman ng ekonomiya nito (AMARTYA SEN)</li>
+<li><strong>Pagsulong:</strong> Pag-usad tungo sa layunin; pagpapaunlad ng kakayahan, kaalaman, at abilidad upang makasabay sa agos ng buhay</li>
+<li><strong>Ebolusyon:</strong> Pagbabago sa mga katangian sa loob ng mahabang panahon; anuman ang unang dumating ay mas mabuti sa sinundang panahon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Salik ng Kaunlaran</summary>
+<ul>
+<li>Likas na yaman</li>
+<li>Yamang-tao</li>
+<li>Kapital</li>
+<li>Teknolohiya at Inobasyon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Palatandaan ng Pag-unlad</summary>
+<ol>
+<li>Makatwiran at dinamikong kaayusan ng panlipunan</li>
+<li>Kasaganaan at kasarinlan</li>
+<li>Kalayaan sa kahirapan, hanapbuhay para sa lahat, umaangat na istandard ng pamumuhay, at mainam na uri ng buhay para sa lahat</li>
+<li>Sapat na mga lingkurang panlipunan</li>
+<li>Katarungang panlipunan</li>
+</ol>
+</details>
+
+<details class="notes"><summary>Dalawang Konsepto ng Pag-unlad (Todaro & Smith, 2012)</summary>
+<ul>
+<li><strong>Tradisyonal:</strong> Pagtamo ng patuloy na pagtaas ng income per capita</li>
+<li><strong>Makabago:</strong> Kumakatawan sa malawakang pagbabago sa buong sistemang panlipunan</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Sukat ng Kaunlaran ng Bansa ayon sa United Nations</summary>
+<ul>
+<li>GDP at GNP</li>
+<li><strong>Human Development Index (HDI):</strong> Pangkalahatang sukat ng kakayahan ng isang bansa na matugunan ang mahahalagang aspeto ng kaunlarang pantao (kalusugan, edukasyon, antas ng pamumuhay)</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Antas ng Kaunlaran ng Bansa</summary>
+<ul>
+<li><strong>Maunlad na Bansa/Developed Economies:</strong> Mataas na GDP, income per capita, at HDI</li>
+<li><strong>Umuunlad na Bansa/Developing Economies:</strong> May industriyang pinauunlad ngunit hindi pa mataas ang industriyalisasyon; hindi pantay ang GDP at HDI</li>
+<li><strong>Papaunlad na Bansa/Underdeveloped Economies:</strong> Kulang sa industriyalisasyon; mababang antas ng agrikultura, GDP, income per capita, at HDI</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Tungkulin ng Mamamayan sa Pag-unlad</summary>
+<ol>
+<li>Suportahan ang pamahalaan</li>
+<li>Sundin at igalang ang batas</li>
+<li>Alagaan ang kapaligiran</li>
+<li>Tumulong sa pagpuksa sa korapsyon at katiwalian sa pamahalaan</li>
+<li>Maging produktibo</li>
+<li>Tangkilikin ang mga produktong Pilipino</li>
+<li>Magtipid ng enerhiya</li>
+<li>Makilahok sa mga gawaing pansibiko</li>
+</ol>
+</details>
+
+<details class="notes"><summary>Gampanin ng Mamamayan</summary>
+<ul>
+<li><strong>Mapanagutan:</strong> Tamang pagbabayad ng buwis, makialam sa pamahalaan</li>
+<li><strong>Maabilidad:</strong> Bumuo o sumali sa kooperatiba, pagnenegosyo</li>
+<li><strong>Maalam:</strong> Tamang pagboto, pakikilahok sa proyektong pangkaunlaran sa komunidad</li>
+<li><strong>Makabansa:</strong> Pakikilahok sa pamamahala ng bansa, pagtangkilik sa mga produktong Pilipino</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+
+<h1 class="category">Lesson 2 - Sektor ng Agrikultura</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="ag.jpg">
+
+<details class="notes"><summary>Ano ang Agrikultura</summary>
+<ul>
+<li>Isang agham at sining na may kinalaman sa pagpaparami ng mga hayop at halaman</li>
+<li>Kaugnay sa lahat ng gawain na sangkot ang mga hayop at halaman</li>
+<li><strong>AGER</strong> = Lupa; <strong>CULTURA</strong> = Paglilinang</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Gawain sa Sektor ng Agrikultura</summary>
+<ul>
+<li>Pagsasaka</li>
+<li>Pangingisda</li>
+<li>Paghahayupan</li>
+<li>Paggugubat/Pagtotroso</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Gampanin ng Pagsasaka</summary>
+<ul>
+<li>Pangunahing pananim: palay, mais, niyog, tubo, saging, pinya, atbp.</li>
+<li>Kita mula sa pagsasaka: ₱797.731 bilyon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Gampanin ng Pangingisda</summary>
+<ul>
+<li>Nauuri sa tatlo: komersiyal, munisipal, at aquaculture</li>
+<li>Panghuhuli ng hipon, sugpo, at iba pang yamang-dagat</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Gampanin ng Paghahayupan</summary>
+<ul>
+<li>May kinalaman sa mga hayop na itinaas para sa karne, hibla, gatas, itlog, atbp.</li>
+<li>Pang-araw-araw na pangangalaga, pagpili ng pag-aanak, at pagpapalaki ng hayop</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Gampanin ng Paggugubat</summary>
+<ul>
+<li>Patuloy na nililinang ang mga kagubatan bagamat may pagkaubos ng yaman</li>
+<li>Pinagkukunan ng plywood, tabla, troso, at veneer</li>
+<li>Pinagkakakitaan ang rattan, nipa, anahaw, kawayan, atbp.</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kahalagahan ng Agrikultura</summary>
+<ol>
+<li>Pinagmumulan ng pagkain</li>
+<li>Pinagkukunan ng hilaw na materyales</li>
+<li>Nagkakaloob ng trabaho sa maraming Pilipino</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+<li>Pinagkukunan ng sobrang manggagawa patungo sa ibang sektor</li>
+</ol>
+</details>
+
+<details class="notes"><summary>Suliranin sa Agrikultura</summary>
+<ul>
+<li><strong>Pagsasaka:</strong> pagliit ng lupang sakahan, kakulangan ng pasilidad, kakulangan ng suporta, climate change, prayoridad sa industriya, pagdagsa ng dayuhang kalakal</li>
+<li><strong>Pangingisda:</strong> mapanirang operasyon ng malalaking komersiyal na mangingisda, epekto ng polusyon, lumalaking populasyon, kahirapan</li>
+<li><strong>Paghahayupan:</strong> pagkakaroon ng peste sa alagang hayop</li>
+<li><strong>Paggugubat:</strong> mabilis na pagkaubos ng likas na yaman</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Patakaran at Programa</summary>
+<ul>
+<li><strong>Panahon bago sakop ng Pilipinas:</strong> pagmamay-ari ng lupa sa pamamagitan ng unang nagtayo ng bahay, walang titulo</li>
+<li><strong>Panahon ng Kastila:</strong> Encomienda System – lupang gantimpala sa naglilingkod sa hari</li>
+<li><strong>Panahon ng Amerikano:</strong> Land Registration Act 1902, Public Land Act 1902 – nagkaroon ng titulo, pamamahagi ng lupa sa mga pamilya</li>
+<li><strong>Panahon ng Kasarinlan:</strong> Batas Republika Blg. 1160, 1190, Agricultural Land Reform Code 1963, Atas ng Pangulo Blg. 2 & 27, Batas Republika Blg. 6657 (CARP 1988)</li>
+<li><strong>MGA Naisakatuparan (CARP, 2003):</strong> pagtatayo ng bagsakan, gulayan, scholarship program, Kalahi agrarian reform zones</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Pangingisda at Pagtotroso</summary>
+<ul>
+<li>Pangingisda: pagtatayo ng mga daungan, Philippine Fisheries Code 1998, Fishery Research Program</li>
+<li>Pagtotroso: CLASP, NIPAS, Sustainable Forest Management Strategy</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Landbank at Sangay ng Pamahalaan</summary>
+<ul>
+<li>Landbank: Kaagapay sa pagpapaunlad ng kabuhayan ng mga magsasaka</li>
+<li>Department of Agriculture (DA): gabay sa makabagong teknolohiya at wastong pagtatanim</li>
+<li>Bureau of Fisheries and Aquatic Resources (BFAR): paunlarin ang pangingisda</li>
+<li>Bureau of Animal Industry (BAI): pangangalaga ng paghahayupan</li>
+<li>Ecosystem Research and Development Bureau (ERDB): pananaliksik sa ecosystem at pangangalaga sa kapaligiran</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+<h1 class="category">Lesson 3 - Sektor ng Industriya</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="ind.jpg">
+
+<details class="notes"><summary>Ano ang Sektor ng Industriya</summary>
+<ul>
+<li>Tumutukoy sa pagproseso ng mga hilaw na materyal at paggawa ng mga produkto na kinakailangan para sa pampublikong pamilihan</li>
+<li>Naglalayong maiproseso ang mga hilaw na materyal upang makabuo ng produkto na ginagamit ng tao</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Sub-Sektor ng Industriya</summary>
+<ul>
+<li>Pagmimina (Mining)</li>
+<li>Pagmamanupaktura (Manufacturing)</li>
+<li>Konstruksyon (Construction)</li>
+<li>Utilities</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Pagmimina</summary>
+<ul>
+<li>Pagkuha at pagproseso ng mga yamang mineral (metal, di-metal, o enerhiya) upang gawing tapos na produkto o kabahagi ng isang yaring kalakal</li>
+<li>Ang mismong produkto, hilaw man o naproseso ay nagbibigay ng kita para sa bansa</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Pagmamanupaktura</summary>
+<ul>
+<li>Paggawa ng mga produkto sa pamamagitan ng manual labor o ng mga makina</li>
+<li>Nagkakaroon ng pisikal o kemikal na transpormasyon ang mga materyal o bahagi nito sa pagbuo ng mga bagong produkto</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Konstruksyon</summary>
+<ul>
+<li>Pagtatayo ng mga gusali, estruktura, at iba pang land improvements</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Utilities</summary>
+<ul>
+<li>Pagtugon ng mga pangunahing pangangailangan ng mga mamamayan tulad ng tubig, kuryente, at gas</li>
+<li>Paglalatag ng mga imprastraktura at angkop na teknolohiya upang maihatid ang serbisyo</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kahalagahan ng Sektor ng Industriya</summary>
+<ul>
+<li>Tumatanggap ng mga produkto mula sa sektor ng agrikultura at ng serbisyo mula sa sektor ng paglilingkod</li>
+<li>Nagkakaloob ng hanapbuhay sa maraming Pilipino</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+<li>Nakagagamit ng makabagong Teknolohiya</li>
+<li>Gumagawa ng mga intermediate products (mga materyales o produkto na ginagamit sa paggawa ng iba pang produkto; hal. wheat - to make bread)</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Pagkakaugnay ng Agrikultura at Industriya</summary>
+<ul>
+<li>Nagmumula sa agrikultura ang mga hilaw na sangkap na ginagamit sa pagbuo ng mga produkto ng industriya</li>
+<li>Ang mga ginagamit na traktora, sasakyang pangingisda, at iba pang produkto ay mula sa industriya na ginagamit ng mga magsasaka upang magkaroon ng mataas na produksyon na magbibigay ng malaking kita sa sektor ng agrikultura</li>
+<li>Ang dami ng lakas-paggawa sa mga mamimili ay nagpapakita ng lubos na pagtutulungan sa mga sector ng industriya at agrikultura</li>
+<li>Ang agrikultura ang pinagmumulan ng pagkain ng mga industriya na siyang tumutugon sa mga pagkaing kinakailangan ng mga tao</li>
+<li>Ang industriya ang nagbibigay ng malaking kontribusyon sa ekonomiya</li>
+<li>Ang mga sangkap ay nagkakaroon ng transpormasyon dahil sa mga lakas–paggawa na gumagawa upang madagdagan ang halaga nito at lalo pang gumanda</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Suliranin sa Pagpapaunlad ng Industriya</summary>
+<ul>
+<li>Pondo at kompetisyon</li>
+<li>Paghina ng lokal na industriya</li>
+<li>Demand</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mga Patakaran at Programa sa Industriya</summary>
+<ul>
+<li><strong>Filipino First Policy:</strong> Nagsimula sa programang Filipino Muna ni Pangulong Carlos P. Garcia; naglalayong bigyan ng higit na malaking partisipasyon ang mga Pilipino sa pagpapatakbo ng ekonomiya</li>
+<li><strong>Oil Deregulation Law (R.A. 8479):</strong> Nagbukas ng kompetisyon sa industriya ng langis; ang pamilihan ang nagdidikta sa presyo ng petrolyo, at hindi ito maaaring pakialaman ng gobyerno</li>
+<li><strong>Patakaran ng Microfinancing:</strong> Serbisyong pinansiyal na isinasagawa ng mga bangko na magpautang na mayroong mababang interes sa mahihirap na pamilya</li>
+<li><strong>Patakaran sa Online Business:</strong> Online shopping o retailing, online intermediary service, online advertisement o classified ads, online auction</li>
+<li><strong>Retail Nationalization Act of 1964 (R.A. 1180):</strong> Sampung taong palugit sa mga dayuhang capitalist; Pilipino na may korporasyon o asosasyon lamang ang nasa kalakalang pagtitingi</li>
+<li><strong>Retail Trade Liberalization Act of 2000 (R.A. 8762):</strong> Nagpawalang-bisa sa RA 1180; binuksan ang kalakalang pagtitingi sa mga dayuhan</li>
+<li><strong>Build-Operate-Transfer (BOT) (R.A. 6957):</strong> Binibigyan ng karapatang bumuo ng mga pasilidad sa kanilang mga sariling pondo at palakarin ito sa humigit-kumulang na 25 taon</li>
+<li><strong>Asset Privatization Trust (APT):</strong> Itinatag upang mapangasiwaan ang pagbebenta ng mga korporasyong pagmamay-ari ng pamahalaan sa pribadong pagmamay-ari; pinasimula ni Corazon Aquino</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Sangay ng Pamahalaan na Tumulong sa Industriya</summary>
+<ul>
+<li><strong>Department of Trade and Industry (DTI):</strong> Tuwirang tumitingin at nangangalaga sa larangan ng industriya at pangangalakal</li>
+<li><strong>Board of Investments (BOI):</strong> Tinutulungan ang mga nagsisimulang industriya at humihikayat sa mga dayuhang mamumuhunan na magnegosyo sa bansa</li>
+<li><strong>Philippine Economic Zone Authority (PEZA):</strong> Tumutulong sa mga namumuhunan na maghanap ng lugar upang pagtayuan ng negosyo</li>
+<li><strong>Securities and Exchange Commission (SEC):</strong> Nagtatala at nagrerehistro sa mga kompanya sa bansa</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Karagdagang Impormasyon</summary>
+<ul>
+<li><strong>Industriyalisasyon:</strong> paggamit ng mga makinarya at makabagong kagamitan sa paglinang ng mga industriya at pinagkukunang yaman</li>
+<li><strong>Sekundaryang sektor:</strong> ang kumakatawan sa industriya</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+<h1 class="category">Lesson 4 - Sektor ng Paglilingkod</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="pag.jpg">
+
+<details class="notes"><summary>Ano ang Sektor ng Paglilingkod</summary>
+<ul>
+<li>Ang umaalalay sa buong yugto ng produksyon, distribusyon, kalakalan, at pagkonsumo ng mga produkto sa loob o labas ng bansa</li>
+<li>Kilala rin ito bilang tersarya o ikatlong sektor ng ekonomiya matapos ang agrikultura at industriya</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Transportasyon, Komunikasyon, at Imbakan</summary>
+<ul>
+<li>Mga serbisyong pampublikong sasakyan, mga paglilingkod ng telepono at mga pinapaupahang bodega</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kalakalan</summary>
+<ul>
+<li>Pagpapalitan ng iba’t-ibang produkto at serbisyo</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Pananalapi</summary>
+<ul>
+<li>Serbisyong may kinalaman sa bangko, insurance, at pamumuhunan</li>
+<li>Nagbibigay ng tulong pinansyal gaya ng mga bangko, bahay-sanglaan, atbp.</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Paupahang Bahay at Real Estate</summary>
+<ul>
+<li>Mga paupahan tulad ng mga apartment, mga developer ng subdivision, town house, at condominium</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Paglilingkod ng Pribado at Pampubliko</summary>
+<ul>
+<li><strong>Pribado:</strong> Lahat ng mga paglilingkod na nagmumula sa pribadong sektor ay kabilang dito</li>
+<li><strong>Pampubliko:</strong> Lahat ng paglilingkod na ipinagkakaloob ng pamahalaan</li>
+</ul>
+</details>
+
+<details class="notes"><summary>MGA AHENSIYANG TUMUTULONG SA SEKTOR NG PAGLILINGKOD</summary>
+<ul>
+<li><strong>Department of Labor and Employment (DOLE):</strong> Pangangalaga sa kapakanan ng mga manggagawang Pilipino, pagtataguyod ng maayos na oportunidad sa trabaho, at regulasyon ng mga patakaran sa paggawa sa bansa</li>
+<li><strong>Overseas Workers Welfare Administration (OWWA):</strong> Tumitingin sa kapakanan ng mga Overseas Filipino Workers</li>
+<li><strong>Philippine Overseas Employment Administration (POEA):</strong> Isulong at paunlarin ang mga programa ukol sa paghahanapbuhay sa ibayong-dagat at pangalagaan ang kapakanan ng mga OFW; itinatag sa bisa ng Executive Order 797 (1982)</li>
+<li><strong>Technical Education and Skills Development Authority (TESDA):</strong> Hikayatin ang buong partisipasyon ng industriya, paggawa, mga lokal na pamahalaan, at mga institusyong teknikal at bokasyonal upang sanayin at paunlarin ang kasanayan ng mga manggagawa sa bansa; itinatag sa bisa ng R.A. 7796 (1994)</li>
+<li><strong>Professional Regulation Commission (PRC):</strong> Nangangasiwa at sumusubaybay sa gawain ng mga manggagawang propesyonal upang matiyak ang kahusayan sa paghahatid ng mga serbisyong propesyonal sa bansa</li>
+<li><strong>Commission on Higher Education (CHED):</strong> Nangangasiwa sa gawain ng mga pamantasan at kolehiyo sa bansa upang maitaas ang kalidad ng edukasyon sa mataas na antas</li>
+</ul>
+</details>
+
+<details class="notes"><summary>MGA BATAS NA NANGANGALAGA SA KARAPATAN NG MANGGAGAWA</summary>
+<ul>
+<li><strong>Artikulo 94 - Holiday Pay:</strong> Bayad ng isang manggagawa na katumbas ng isang araw na sahod kahit hindi pumasok sa araw ng pista opisyal</li>
+<li><strong>Republic Act 6727 - Wage Rationalization Act:</strong> Mandato para sa pagsasaayos ng pinakamababang pasahod o minimum wage</li>
+<li><strong>Artikulo 91-93 - Premium Pay:</strong> Karagdagang bayad sa manggagawa sa loob ng walong oras na trabaho sa araw ng pahinga at special days</li>
+<li><strong>Artikulo 87 - Overtime Pay:</strong> Karagdagang bayad sa pagtatrabaho lampas sa 8 oras sa isang araw</li>
+<li><strong>Artikulo 86 - Night Shift Differential:</strong> Karagdagang bayad sa pagtatrabaho sa gabi hindi bababa sa 10% ng regular na sahod sa bawat oras mula 10PM - 6AM</li>
+<li><strong>Artikulo 96 - Service Charges:</strong> Lahat ng manggagawa sa isang establishment na kumokolekta ng service charges ay may karapatan sa 85% na kabuuang koleksiyon</li>
+<li><strong>Artikulo 95 - Service Incentive Leave:</strong> Manggagawa na naglilingkod ng hindi kukulangin sa isang taon ay may karapatang limang araw na service incentive leave na may bayad</li>
+<li><strong>Republic Act 1161 - Maternity Leave:</strong> Nagbibigay ng maternity leave sa nagdadalang-taong manggagawa sa pribadong sektor; kasal man o hindi, kasama ang benepisyong katumbas ng 100% ng sahod</li>
+<li><strong>Republic Act 8972 - Paternity Leave para sa solong magulang:</strong> Ipinagkaloob sa solong magulang o indibidwal na may responsibilidad bilang magulang</li>
+<li><strong>Republic Act 8187 - Paternity Leave:</strong> Maaaring magamit ng empleyadong lalaki sa unang apat na araw mula nang manganak ang legal na asawa</li>
+<li><strong>Presidential Decree 851 - Thirteenth Month Pay:</strong> Binibigay sa mga empleyado bago mag-24 ng Disyembre bawat taon</li>
+<li><strong>Presidential Decree 626 - Employees Compensation Program:</strong> Compensation package sa mga manggagawa sa pampubliko at pribadong sektor sakaling may kaganapang pagkakasakit na may kaugnayan sa trabaho</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kahalagahan ng Sektor ng Paglilingkod</summary>
+<ul>
+<li>Tinitiyak na makakarating sa mga mamimili ang mga produkto mula sa mga sakahan o pagawaan</li>
+<li>Nagbibigay ng trabaho sa mga mamamayan</li>
+<li>Tinitiyak ang maayos na pag-iimbak at pagtitinda ng kalakal</li>
+<li>Nagpapataas ng GDP ng bansa</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Karagdagang Impormasyon</summary>
+<ul>
+<li><strong>Article 13, Section 3:</strong> Dapat magkaloob ang estado ng lubos na proteksyon sa paggawa, lokal at sa ibang bansa, organiso at di-organiso, itaguyod ang puspusang empleyo at pantay na pagkakataon sa trabaho at para sa lahat</li>
+<li><strong>Handbook Workers Statutory Monetary Benefits:</strong> Gabay at dagdag kaalaman tungkol sa umiiral na batas sa larangan ng paggawa</li>
+<li><strong>Papel ng Sektor ng Paglilingkod:</strong> Nagkakaloob ng lakas-paggawa, kasanayan, kaalaman, at serbisyo para sa kaunlarang pang-ekonomiya</li>
+<li><strong>Karl Marx:</strong> Ang mga manggagawa ang tunay na prodyuser ng bansa</li>
+<li><strong>Kontraktuwalisasyon:</strong> Ang isang manggagawa ay nakatali sa kontrata na mayroon siyang trabaho sa loob ng 5 buwan lamang; kapag natapos na ang kontrata, kinakailangan niyang umalis sa pinagtatrabahuhan</li>
+<li><strong>Brain Drain:</strong> Pagkaubos ng mga manggagawa patungo sa ibang bansa</li>
+<li><strong>Regular Working Hours:</strong> 8 oras kada araw</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+<h1 class="category">Lesson 5 - Impormal na Sektor</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="ins.jpg">
+
+<details class="notes"><summary>Ano ang Impormal na Sektor</summary>
+<ul>
+<li>Sektor ng ekonomiya na walang pormal o salat sa mga dokumentong kailangan sa pagsasagawa ng gawaing pang-ekonomiya</li>
+<li>Ang kita ng sektor na ito ay HINDI naisasama sa kabuuang Gross Domestic Product (GDP) ng bansa</li>
+<li>Paraan ng mamamayan upang magkaroon ng kabuhayan/dagdag kita sa tuwing panahon ng pangangailangan</li>
+<li>Ito ay nagdudulot rin ng pagkakalikha ng mga produkto at serbisyong tutugon sa ating mga pangangailangan</li>
+<li>Kilala rin sa tawag na Underground Economy</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Halimbawa ng Mga Tao sa Sektor na Ito</summary>
+<ul>
+<li>Nagtitinda sa kalsada</li>
+<li>Pedicab driver</li>
+<li>Karpintero</li>
+<li>Hindi rehistradong pampublikong sasakyan</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Katangian ng Impormal na Sektor</summary>
+<ul>
+<li>Hindi nakarehistro sa pamahalaan</li>
+<li>Hindi nagbabayad ng buwis mula sa kinita</li>
+<li>Walang legal at pormal na balangkas mula sa pamahalaan para sa pagnenegosyo</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Iba’t Ibang Anyo ng Impormal na Sektor</summary>
+<ul>
+<li>Mga gawaing maaaring isakatuparan lamang sa loob ng tahanan</li>
+<li>Mga gawaing pansibiko, pagkakawanggawa, at panrelihiyon</li>
+<li>Mga sari-sari stores, pagtitinda sa labas ng bahay o sidewalk, paglalako ng kalakal o serbisyo</li>
+<li>Ilegal na gawain tulad ng pagnanakaw, pagbebenta ng ilegal na gamot, piracy, at prostitusyon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kahalagahan ng Impormal na Sektor</summary>
+<ul>
+<li>Sinasalo nito ang mga mamamayan na hindi makapasok bilang mga regular na empleyado sa isang kompanya</li>
+<li>Nagbibigay ng pagkakataon sa maraming Pilipino na makapaghanapbuhay</li>
+<li>Nagsisilbing tagasalo ng mga mamamayang may mahigpit na pangangailangan</li>
+<li>Malaki ang naitutulong sa mga konsyumer ang mga kalakal at serbisyong mula sa impormal na sektor dahil sa MURA nitong halaga</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Dahilan Kung Bakit Pumapasok sa Impormal na Sektor ang Mamamayan</summary>
+<ul>
+<li>Makaligtas sa pagbabayad ng buwis sa pamahalaan</li>
+<li>Makaiwas sa masyadong mahaba at masalimuot na proseso ng pakikipagtransaksyon sa pamahalaan (bureaucratic red tape)</li>
+<li>Kawalan ng regulasyon mula sa pamahalaan na kung saan ang mga batas at programa ay hindi naitutupad nang maayos</li>
+<li>Makapaghanapbuhay nang hindi nangangailangan ng malaking kapital o puhunan</li>
+<li>Malabanan ang matinding kahirapan</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Epekto sa Ekonomiya ng Impormal na Sektor</summary>
+<ul>
+<li>Pagbaba ng halaga ng nalilikom na buwis</li>
+<li>Banta sa kapakanan ng mga mamimili</li>
+<li>Paglaganap ng mga ilegal na gawain</li>
+</ul>
+</details>
+
+<details class="notes"><summary>MGA BATAS, PROGRAMA, AT PATAKARANG PANG-EKONOMIYA SA IMPORMAL NA SEKTOR</summary>
+<ul>
+<li><strong>Social Reform and Poverty Alleviation Act of 1997 (R.A 8425):</strong> Iahon sa kahirapan ang mga Pilipinong kabilang sa impormal na sektor; itinatag ang National Anti-Poverty Commission upang maisakatuparan ang batas</li>
+<li><strong>Magna Carta of Women (R.A 9710):</strong> Inaalis ang lahat ng uri ng diskriminasyon laban sa kababaihan</li>
+<li><strong>Philippine Labor Code (P.D 422):</strong> Pangunahing batas ng bansa para sa mga manggagawa; itinatag noong Mayo 1, 1974</li>
+<li><strong>Technical Education and Skills Development Act of 1994 (R.A 7796):</strong> Layuning palakasin ang pakikiisa ng iba't ibang sektor upang mapabuti ang kasanayan at kalidad ng yamang tao sa bansa</li>
+<li><strong>Social Security Act of 1997 (R.A 8282):</strong> Nagtatakda ng tungkulin ng estado na paunlarin at pangalagaan ang seguridad at kagalingang panlipunan ng mga manggagawa</li>
+<li><strong>National Health Insurance Act of 1995 (R.A 7875):</strong> Nagtatag ng PhilHealth upang matiyak na may maayos at sistematikong kaseguruhang pangkalusugan ang lahat ng Pilipino</li>
+</ul>
+</details>
+
+<details class="notes"><summary>MGA PROGRAMA PARA SA MAMAMAYAN</summary>
+<ul>
+<li><strong>Dole Integrated Livelihood Program (DILP):</strong> Nagbibigay ng pagsasanay at tulong pangkabuhayan para sa sariling hanapbuhay</li>
+<li><strong>Self-Employment Assistance Kaunlaran Program (SEA-K):</strong> Tumutulong sa mahihirap na pamilya sa pagsasanay at pagsisimula ng negosyo</li>
+<li><strong>Integrated Services for Livelihood Advancement of the Fisherfolks (ISLA):</strong> Nagbibigay ng suporta sa pamamagitan ng pagsasanay at pagkakaloob ng kagamitan upang mapaunlad ang kanilang hanapbuhay</li>
+<li><strong>Cash-For-Work Program (CWP):</strong> Pansamantalang kita para sa nasalanta, kapalit ng trabahong pang-rehabilitasyon</li>
+<li><strong>Pantawid Pamilyang Pilipino Program (4Ps):</strong> Tulong-pinansyal sa pinakamahihirap na Pilipino kapalit ng pagsunod sa mga kondisyong pangkalusugan at pang-edukasyon ng kanilang mga anak</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+<h1 class="category">Lesson 6 - Patakarang Panlabas</h1>
+
+<div class="lesson-images">
+  <div class="image-box"><img src="ppl.jpg">
+
+<details class="notes"><summary>Ano ang Patakarang Panlabas</summary>
+<ul>
+<li>Palitan ng produkto at serbisyo sa pagitan ng mga bansa</li>
+<li>Nagaganap sapagkat walang bansa ang maaaring makatugon sa lahat ng kanyang pangangailangan nang walang tulong mula sa ibang bansa</li>
+<li><strong>Bilateral:</strong> 2 bansa (hal. U.S at PH)</li>
+<li><strong>Bloc:</strong> Organisasyon at 1 bansa (hal. APEC at PH)</li>
+<li><strong>EKSPORT (Pagluluwas):</strong> pagpapadala ng mga produkto at serbisyo sa ibang bansa</li>
+<li><strong>IMPORT (Pag-aangkat):</strong> pagbili ng kalakal mula sa ibang bansa</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Dahilan ng Kalakalang Panlabas</summary>
+<ul>
+<li>Pagkakaiba ng Teknolohiya</li>
+<li>Pagkakaiba sa Pinagkukunang Yaman</li>
+<li>Pagkakaiba sa Panlasa</li>
+<li>Pagkakaiba sa Halaga ng Produksyon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Patakarang Umaapekto sa Kalakalang Panlabas</summary>
+<ul>
+<li><strong>Taripa/Tariff:</strong> Buwis sa mga produktong inaangkat; nagpapataas ng presyo at nagpapababa ng benta; mataas na taripa para mapigil ang pagpasok ng dayuhang produkto</li>
+<li><strong>Kota/Quota:</strong> Maaaring limitahan ang pagpasok ng kalabang produkto</li>
+<li><strong>Subsidy:</strong> Tulong ng gobyerno upang bumaba ang halaga ng produksyon ng lokal na produkto</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Batayan ng Kalakalang Panlabas (David Ricardo)</summary>
+<ul>
+<li><strong>Absolute Advantage:</strong> Nakakalikha ng mas maraming bilang ng produkto gamit ang mas kaunting salik ng produksyon kumpara sa ibang bansa</li>
+<li><strong>Comparative Advantage:</strong> Espesyalisasyon sa paglikha ng kalakal; mas efficient kumpara sa ibang bansa; Hal. Cebu – lechon</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Balance of Trade (BOT)</summary>
+<ul>
+<li>Kalagayan ng kabayaran ng pagluluwas (export) at pag-aangkat (import)</li>
+<li><strong>Trade Deficit:</strong> import > export</li>
+<li><strong>Trade Surplus:</strong> import < export</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Kabutihan at Di-Kabutihan ng Pakikipagkalakalan</summary>
+<ul>
+<li>Mas maraming produkto ang mapagpipilian sa pamilihan</li>
+<li>Napapataas ang kalidad ng mga produkto sa pamilihan</li>
+<li>Nagkakaroon ng pagkakaunawaan ang mamamayan ng bansang nakikipagkalakalan</li>
+<li>Lumalawak ang pamilihan ng mga produkto sa bansa</li>
+<li>Nagiging palaasa ang mamamayan sa produktong imported</li>
+<li>Hindi nalilinang ang pagkamalikhain ng mamamayan dahil umaasa sa produktong galing sa ibang bansa</li>
+<li>Pagkawala ng sariling pagkakakilanlan dahil sa pagpasok ng dayuhang kultura</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Samahang Pandaigdigang Pang-ekonomiko</summary>
+<ul>
+<li><strong>World Trade Organization (WTO):</strong> Naitatag Enero 1, 1995; namamahala sa pandaigdigang kalakalan; layunin – pagsusulong ng maayos na kalakalan, plataporma sa negosasyon, tulong teknikal sa developing countries, trade sanctions sa hindi sumusunod</li>
+<li><strong>Asia-Pacific Economic Council (APEC):</strong> Itinatag Nobyembre 1989; layunin – liberalisasyon ng kalakalan at pamumuhunan, pagpapabilis ng negosyo, pagtutulungang pang-ekonomiya at teknikal</li>
+<li><strong>Association of Southeast Asian Nations (ASEAN):</strong> Itinatag August 8, 1967; layunin – paunlarin at isulong ang malayang kalakalan; ASEAN Free Trade Area (AFTA) noong Jan 28, 1992; batay sa CEPT – nag-aalis ng taripa at quota para sa mas malayang daloy ng produkto</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Samahang Panloob at Programa</summary>
+<ul>
+<li><strong>Liberalisasyon sa Sektor ng Pagbabangko (R.A 7721):</strong> Pinapayagan ang dayuhang bangko na magtayo at magpatakbo ng sangay sa bansa</li>
+<li><strong>Foreign Trade Services Corps (FTSC):</strong> Nagtataguyod ng lokal na produkto sa pandaigdigang pamilihan</li>
+<li><strong>Trade and Industry Information Center (TIIC):</strong> Nangangalap at nagpapalaganap ng datos tungkol sa ekonomiya, kalakalan, industriya, pamahalaan, at kapakanan ng mamimili</li>
+<li><strong>Center for Industrial Competitiveness:</strong> Naglulunsad ng programa at pagsasanay upang mapahusay ang kakayahan at produktibidad ng manggagawa</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Karagdagang Impormasyon</summary>
+<ul>
+<li><strong>Liberalisasyon:</strong> Pagtanggal ng kota at taripa sa pakikipagkalakalan</li>
+<li><strong>Deregulasyon:</strong> Pagtanggal ng pakikialam ng pamahalaan sa panlabas na kalakalan</li>
+<li><strong>Dolyar:</strong> Common currency sa pandaigdigang kalakalan</li>
+<li><strong>Pribatisasyon:</strong> Pagbebenta ng pag-aari ng gobyerno sa pribadong kompanya</li>
+<li><strong>Balance of Payment:</strong> Pandaigdigang batayan o sukatan para sa gawaing pang-ekonomiya; talaang nagpapakita ng transaksyon ng bansa sa ibang bahagi ng mundo</li>
+<li><strong>Dumping:</strong> Pagdagsa ng sobrang kalakal ng mas malakas na bansa tungo sa mas mahinang bansa</li>
+<li><strong>Kota/Quota:</strong> Takdang dami ng mga produktong maaaring iluwas sa isang bansa</li>
+</ul>
+</details>
+
+<hr class="rounded">
+
+<h1 class="category">Pagninilay para sa Buong Quarter</h1>
+
+<details class="notes"><summary>Pagninilay</summary>
+<p>
+Sa buong pag-aaral ngayong quarter, aking naunawaan na bawat sektor ng ekonomiya—agrikultura, industriya, paglilingkod, impormal na sektor, at pakikipagkalakalan sa ibang bansa—ay magkakaugnay at may mahalagang papel sa kaunlaran ng bansa. Ang responsableng pakikilahok ng mamamayan, tamang paggamit ng yaman, at pag-unawa sa patakarang pang-ekonomiya ay susi upang umunlad ang lipunan at maitaguyod ang mas maayos at masaganang pamumuhay para sa lahat.
+</p>
+</details>
+
+<hr class="rounded">
+
+<a href="AP.html" class="back">Back to AP Notes!</a>
+<br>
+<a href="index.html" class="back">Back to Home!</a>
+
+</body>
+</html>

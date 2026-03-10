@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP - Maykroekonomiks</title>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+  font-family: 'Gaegu', cursive;
+  background-image: url("yellow.jpg"); 
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Heading */
+h1 {
+  background-color: #001f4d;
+  padding: 20px;
+  color: #fcf1ae;
+  font-size: 50px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+/* Lesson Category */
+h1.category {
+  background-color: #ff99b8;
+  color: #001f4d;
+  font-size: 40px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  margin: 30px auto 10px auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+
+/* Image Section */
+.lesson-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border: 5px solid #ff99b8;
+  border-radius: 15px;
+  margin: 10px;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.caption {
+  background-color: #fcf1ae;
+  border: 2px solid #ff99b8;
+  border-radius: 10px;
+  padding: 6px 10px;
+  color: #001f4d;
+  font-size: 18px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/* Notes */
+details.notes {
+  background-color: #fcf1ae;
+  color: #001f4d;
+  border: 3px solid #ff99b8;
+  border-radius: 15px;
+  padding: 15px;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  max-width: 750px;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+details.notes[open] {
+  background-color: #ffe9b3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+details.notes summary + * {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+}
+
+details.notes[open] summary + * {
+  max-height: 500px;
+  opacity: 1;
+}
+
+details.notes summary {
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  font-size: 22px;
+  color: #001f4d;
+  outline: none;
+}
+
+details.notes summary::-webkit-details-marker {
+  display: none;
+}
+
+details.notes summary:hover {
+  color: #ff4d7a;
+  transition: color 0.2s ease;
+}
+
+/* Back Button */
+a.back {
+  font-size: 35px;
+  background-color: #ff99b8;
+  color: #001f4d;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+a.back:hover {
+  text-decoration: underline;
+  color: #fcf1ae;
+}
+
+/* Rounded HR */
+hr.rounded {
+  border-top: 8px solid #001f4d;
+  border-radius: 5px;
+  width: 90%;
+  margin: 40px auto;
+}
+</style>
+</head>
+
+<body>
+
+<h1>&#127802; AP - Maykroekonomiks &#127802;</h1>
+<hr class="rounded">
+
+<!-- Lesson 1 - Demand -->
+<div class="lesson-images">
+  <div class="image-box"><img src="taasdemand.jpg"><p class="caption">Pagtaas ng Demand</p></div>
+ 
+
+<details class="notes"><summary>Depinisyon ng Demand</summary>
+<p>Ang <strong>demand</strong> ay tumutukoy sa dami ng produkto o serbisyo na gusto at kayang bilhin ng mga mamimili sa isang takdang presyo at panahon.</p>
+</details>
+
+<details class="notes"><summary>Presyo bilang Determinant</summary>
+<p>Ang <strong>presyo</strong> ang pinakamahalagang nagtatakda (determinant) sa dami ng demand.</p>
+</details>
+
+<details class="notes"><summary>Batas ng Demand</summary>
+<ul>
+<li>Kapag <strong>tumataas</strong> ang presyo, <strong>bumababa</strong> ang dami ng gusto at kayang bilhin.</li>
+<li>Kapag <strong>bumababa</strong> ang presyo, <strong>tumataas</strong> ang dami ng gusto at kayang bilhin.</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Ceteris Paribus</summary>
+<p>Ipinagpapalagay na ang presyo lamang ang salik na nakaapekto sa pagbabago ng quantity demanded, habang ang ibang salik ay hindi nagbabago o nakaapekto rito.</p>
+</details>
+
+<details class="notes"><summary>Bakit may Inverse na Ugnayan?</summary>
+<ul>
+<li><strong>Substitution Effect:</strong> Kapag tumataas ang presyo ng isang produkto, ang mga mamimili ay hanap ng pamalit na mas mura.</li>
+<li><strong>Income Effect:</strong> Mas malaki ang halaga ng kinikita kapag mas mababa ang presyo.</li>
+</ul>
+</details>
+
+<details class="notes"><summary>Mathematical Formula</summary>
+<p>Demand = Kagustuhan + Kakayahan</p>
+</details>
+
+<details class="notes"><summary>Demand Function</summary>
+<p>Qd = a - bP<br><br><strong>Kung saan:</strong><br>Qd = dami ng demand (Dependent)<br>a = dami ng demand kung ang presyo ay 0<br>-b = slope ng demand function<br>p = presyo</p>
+</details>
+
+<details class="notes"><summary>Demand Curve</summary>
+<p>Flow of representation ng batas ng demand.<br>Isang linya na nagpapakita ng negatibong relasyon ng presyo at dami ng produktong handang bilhin ng mamimili.</p>
+</details>
+
+<details class="notes"><summary>Mga Salik ng Produkto</summary>
+<ol>
+<li>Kita</li>
+<li>Populasyon</li>
+<li>Panlasa</li>
+<li>Presyo</li>
+<li>Inaasahan ng mga mamimili sa presyo sa hinaharap</li>
+<li>Okasyon</li>
+<li>Panahon o Klima</li>
+</ol>
+</details>
+
+<hr class="rounded">
+
+<a href="AP.html" class="back">Back to AP Notes!</a>
+<br>
+
+<a href="Homepage.html" class="back">Back to Home!</a>
+
+</body>
+</html>

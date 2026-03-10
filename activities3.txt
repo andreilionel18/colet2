@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Third Quarter School Activities</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+html, body {
+  font-family:'Gaegu', cursive;
+  margin:0;
+  padding:0;
+  text-align:center;
+  color:#001f4d;
+  min-height: 100vh;
+  background-image: url("navyaura.jpg"); /* your full-screen background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* MAIN TITLE */
+h1{
+  background-color:#fcf1ae;
+  padding:20px 40px;
+  font-size:50px;
+  border-radius:18px;
+  display:inline-block;
+  margin-top:40px;
+  box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* EVENT TITLE */
+h2{
+  background-color:#ff99b8;
+  color:#001f4d;
+  font-size:35px;
+  padding:10px 30px;
+  border-radius:15px;
+  display:inline-block;
+  margin-top:10px;
+}
+
+/* EVENT CARD */
+.event-section{
+  background-color:#fcf1ae; /* yellow background */
+  border:4px solid #ff99b8;
+  border-radius:25px;
+  width:85%;
+  max-width:1000px;
+  margin:40px auto;
+  padding:30px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* IMAGE ROW */
+.image-row{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.image-row img{
+  width:320px;
+  height:220px;
+  object-fit:cover;
+  border:5px solid #ff99b8;
+  border-radius:15px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.image-row img:hover{
+  transform:scale(1.05);
+  box-shadow:0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* LIGHTBOX OVERLAY */
+#lightbox {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+#lightbox img {
+  max-width:90%;
+  max-height:90%;
+  border:5px solid #ff99b8;
+  border-radius:15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* REFLECTION BOX */
+.reflection{
+  background-color:#fff9e6;
+  border:3px dashed #ff99b8;
+  border-radius:20px;
+  padding:25px;
+  text-align:left;
+  font-size:20px;
+  width:90%;
+  max-width:900px;
+  margin:30px auto;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* QUESTIONS */
+dt{
+  font-weight:bold;
+  margin-top:15px;
+  color:#001f4d;
+}
+
+dd{
+  margin-left:20px;
+  margin-bottom:10px;
+  color:#333;
+  font-style:italic;
+}
+
+/* PHOTO CREDITS BOX */
+.credits{
+  margin-top:20px;
+  font-size:16px;
+  color:#333;
+  background-color:#fff2cc;
+  padding:8px 12px;
+  border-radius:8px;
+  display:inline-block;
+}
+
+/* BACK BUTTON */
+a.back{
+  display:inline-block;
+  background-color:#ff99b8;
+  color:#001f4d;
+  text-decoration:none;
+  font-size:25px;
+  padding:10px 20px;
+  margin:40px;
+  border-radius:10px;
+}
+
+a.back:hover{
+  color:#fcf1ae;
+  text-decoration:underline;
+}
+
+/* HR */
+hr.rounded{
+  border-top:8px solid #001f4d;
+  border-radius:5px;
+  width:80%;
+  margin:40px auto;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Third Quarter School Activities</h1>
+
+<!-- BOOKLANDIA SECTION -->
+<div class="event-section">
+<h2>Booklandia</h2>
+
+<div class="image-row">
+  <img src="booklandia1.jpg" alt="Booklandia 1" onclick="openLightbox(this.src)">
+  <img src="booklandia2.jpg" alt="Booklandia 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>As one of the contestants for this event, I learned to put confidence in myself.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>By believing in myself and preparing well for challenges.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>Yes, I showcased my character and did my best in every aspect of the competition.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>Booklandia is a character showcase pageant where contestants present book characters.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>It makes learning engaging and allows students to apply what they learned in a fun way.</dd>
+</dl>
+
+<p class="credits">Photo credits: Jade Imperial &lt;3</p>
+</div>
+</div>
+
+<!-- VPOP SECTION -->
+<div class="event-section">
+<h2>VPOP</h2>
+
+<div class="image-row">
+  <img src="vpop1.jpg" alt="VPOP 1" onclick="openLightbox(this.src)">
+  <img src="vpop2.jpg" alt="VPOP 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>VPOP taught me leadership and teamwork.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>Lead group activities and ensure everyone’s ideas are heard.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>As president, I led the class and guided preparations.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>VPOP is a class performance event that teaches leadership and cooperation.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>It helps students practice leadership, teamwork, and creativity.</dd>
+</dl>
+
+<p class="credits">Photo credits: Jade Imperial &lt;3</p>
+</div>
+</div>
+
+<!-- MVP SECTION -->
+<div class="event-section">
+<h2>MVP</h2>
+
+<div class="image-row">
+  <img src="mvp1.jpg" alt="MVP 1" onclick="openLightbox(this.src)">
+  <img src="mvp2.jpg" alt="MVP 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>Beauty is subjective; inner values matter more than appearance.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>Support and encourage others while appreciating character and kindness.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>As a viewer, I cheered on and appreciated the participants’ efforts.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>The event emphasizes inner beauty and values, and supporting others counts too.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>It develops values, teamwork, and social skills while celebrating talents.</dd>
+</dl>
+
+<p class="credits">Photo credits: Reese Cruz &lt;3</p>
+</div>
+</div>
+
+<hr class="rounded">
+
+<a href="ICT.html" class="back">Back to TLE/ICT Homepage</a>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged Image">
+</div>
+
+<script>
+function openLightbox(src){
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox(){
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fourth Quarter School Activities</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+html, body {
+  font-family:'Gaegu', cursive;
+  margin:0;
+  padding:0;
+  text-align:center;
+  color:#001f4d;
+  min-height: 100vh;
+  background-image: url("navyaura.jpg"); /* your full-screen background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* MAIN TITLE */
+h1{
+  background-color:#fcf1ae;
+  padding:20px 40px;
+  font-size:50px;
+  border-radius:18px;
+  display:inline-block;
+  margin-top:40px;
+  box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* EVENT TITLE */
+h2{
+  background-color:#ff99b8;
+  color:#001f4d;
+  font-size:35px;
+  padding:10px 30px;
+  border-radius:15px;
+  display:inline-block;
+  margin-top:10px;
+}
+
+/* EVENT CARD */
+.event-section{
+  background-color:#fcf1ae; /* yellow background */
+  border:4px solid #ff99b8;
+  border-radius:25px;
+  width:85%;
+  max-width:1000px;
+  margin:40px auto;
+  padding:30px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* IMAGE ROW */
+.image-row{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.image-row img{
+  width:320px;
+  height:220px;
+  object-fit:cover;
+  border:5px solid #ff99b8;
+  border-radius:15px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.image-row img:hover{
+  transform:scale(1.05);
+  box-shadow:0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* LIGHTBOX OVERLAY */
+#lightbox {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+#lightbox img {
+  max-width:90%;
+  max-height:90%;
+  border:5px solid #ff99b8;
+  border-radius:15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* REFLECTION BOX */
+.reflection{
+  background-color:#fff9e6;
+  border:3px dashed #ff99b8;
+  border-radius:20px;
+  padding:25px;
+  text-align:left;
+  font-size:20px;
+  width:90%;
+  max-width:900px;
+  margin:30px auto;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* QUESTIONS */
+dt{
+  font-weight:bold;
+  margin-top:15px;
+  color:#001f4d;
+}
+
+dd{
+  margin-left:20px;
+  margin-bottom:10px;
+  color:#333;
+  font-style:italic;
+}
+
+/* PHOTO CREDITS BOX */
+.credits{
+  margin-top:20px;
+  font-size:16px;
+  color:#333;
+  background-color:#fff2cc;
+  padding:8px 12px;
+  border-radius:8px;
+  display:inline-block;
+}
+
+/* BACK BUTTON */
+a.back{
+  display:inline-block;
+  background-color:#ff99b8;
+  color:#001f4d;
+  text-decoration:none;
+  font-size:25px;
+  padding:10px 20px;
+  margin:40px;
+  border-radius:10px;
+}
+
+a.back:hover{
+  color:#fcf1ae;
+  text-decoration:underline;
+}
+
+/* HR */
+hr.rounded{
+  border-top:8px solid #001f4d;
+  border-radius:5px;
+  width:80%;
+  margin:40px auto;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Fourth Quarter School Activities</h1>
+
+<!-- MATH SECTION -->
+<div class="event-section">
+<h2>Math Month</h2>
+
+<div class="image-row">
+  <img src="math1.jpg" alt="math 1" onclick="openLightbox(this.src)">
+  <img src="math2.jpg" alt="math 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>Math Garden, Math TikTok, and Math Idol taught me that math is everywhere and can be fun and creative, not just numbers on paper.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>I can apply math in everyday life, like problem-solving, planning, budgeting, or even creating fun projects and content.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>I actively participated in Math TikTok and supported my batch and classmates in Math Garden and Math Idol by cheering them on and encouraging their efforts.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>I would explain that math isn’t just in books—it’s in games, videos, challenges, and even in creative activities, and that everyone can enjoy it.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>Events like Math Month make learning interactive and enjoyable, showing students how to apply subject skills creatively while promoting teamwork and participation.</dd>
+</dl>
+
+<p class="credits">Photo credits: Jade Imperial &lt;3</p>
+</div>
+</div>
+
+<!-- MDA SECTION -->
+<div class="event-section">
+<h2>Miting De Avance</h2>
+
+<div class="image-row">
+  <img src="mda1.jpg" alt="mda 1" onclick="openLightbox(this.src)">
+  <img src="mda2.jpg" alt="mda 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>As one of the candidates for Grade 10 representative, I learned to be true to myself and to understand what it takes to represent my batch. I realized that leadership involves listening, supporting others, and earning their trust.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>I can apply this by being honest and responsible in school projects, group activities, and other situations where leadership and representation are needed.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>Yes, I actively participated by preparing my campaign, presenting my ideas, and presenting my speech for my batch to hear.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>I would explain that MDA (Miting de Avance) is a school-wide meeting where students meet the candidates running for school government, teaching the value of leadership, responsibility, and teamwork.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>Events like MDA are important because they encourage student participation, leadership skills, and a sense of responsibility while giving everyone a chance to learn, engage actively, and vote wisely.</dd>
+</dl>
+
+
+<p class="credits">Photo credits: Jade Imperial &lt;3</p>
+</div>
+</div>
+
+<!-- STREET DANCE SECTION -->
+<div class="event-section">
+<h2>Street Dance Competition</h2>
+
+<div class="image-row">
+  <img src="streetdance1.jpg" alt="streetdance 1" onclick="openLightbox(this.src)">
+  <img src="streetdance2.jpg" alt="streetdance 2" onclick="openLightbox(this.src)">
+</div>
+
+<div class="reflection">
+<strong>Reflection Questions:</strong>
+<dl>
+<dt>What is the most important thing I learned from the event?</dt>
+<dd>Hard work and teamwork always pay off. In this competition, Fidelity was paired with Fairness. Even though our representatives were from two different sections, we enjoyed our time together and I realized that teamwork, communication, and supporting each other are key to success.</dd>
+
+<dt>How can I apply what I learned in real-life situations?</dt>
+<dd>I can apply this by collaborating effectively in group projects, activities, or any team-based situation, making sure everyone contributes and feels included.</dd>
+
+<dt>Did I actively participate in the event? How?</dt>
+<dd>I competed as one of the dancers for Team Rival, which placed 3rd, giving my best effort and supporting my teammates throughout the competition.</dd>
+
+<dt>If I were to teach this topic to a classmate, how would I explain it?</dt>
+<dd>I would explain that street dance competitions show the importance of practice, teamwork, and coordination, and that success comes from working together and giving your best.</dd>
+
+<dt>Why is it important to have an event (per subject)?</dt>
+<dd>Events like this are important because they develop discipline, collaboration, and creativity while allowing students to showcase talents and have fun learning outside the classroom.</dd>
+</dl>
+
+<p class="credits">Photo credits: Reese Cruz &lt;3</p>
+</div>
+</div>
+
+<hr class="rounded">
+
+<a href="ICT.html" class="back">Back to TLE/ICT Homepage</a>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged Image">
+</div>
+
+<script>
+function openLightbox(src){
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox(){
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
